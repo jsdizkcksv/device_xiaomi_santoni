@@ -21,6 +21,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
 $(call inherit-product, vendor/xiaomi/santoni/santoni-vendor.mk)
 
+$(call inherit-product-if-exists, hardware/mithorium/mithorium_qcom_hals.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
@@ -197,22 +199,23 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 # Display
 PRODUCT_PACKAGES += \
     gralloc.msm8937 \
-    hwcomposer.msm8937 \
     memtrack.msm8937 \
-    libdisplayconfig \
     libdisplayconfig.qti \
     libvulkan \
     libqdMetaData \
-    libtinyxml \
-    vendor.display.config@1.0.vendor \
-    vendor.display.config@2.0
+    vendor.display.config@1.9.vendor \
+    vendor.display.config@2.0 \
+    vendor.display.config@2.0.vendor
 
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.allocator-service \
+    vendor.qti.hardware.display.composer-service \
+    vendor.qti.hardware.display.mapper@1.1.vendor \
     vendor.qti.hardware.display.mapper@2.0.vendor \
+    vendor.qti.hardware.display.mapper@3.0.vendor \
+    vendor.qti.hardware.display.mapper@4.0.vendor \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
-    android.hardware.graphics.composer@2.1-service \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service
 

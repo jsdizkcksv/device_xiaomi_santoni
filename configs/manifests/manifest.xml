@@ -61,11 +61,6 @@
         <fqname>@2.2::IFactory/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.graphics.composer</name>
-        <transport>hwbinder</transport>
-        <fqname>@2.1::IComposer/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.ir</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IConsumerIr/default</fqname>
@@ -134,21 +129,6 @@
         <name>com.qualcomm.qti.uceservice</name>
         <transport>hwbinder</transport>
         <fqname>@2.3::IUceService/com.qualcomm.qti.uceservice</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.display.color</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::IDisplayColor/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.display.config</name>
-        <transport>hwbinder</transport>
-        <fqname>@2.0::IDisplayConfig/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.display.postproc</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::IDisplayPostproc/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.alarm</name>
