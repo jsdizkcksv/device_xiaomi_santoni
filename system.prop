@@ -40,7 +40,6 @@ arm64.memtag.process.system_server=off
 debug.hwui.renderer=skiagl
 debug.hwui.skia_atrace_enabled=false
 debug.renderengine.backend=skiaglthreaded
-persist.demo.hdmirotationlock=false
 persist.debug.wfd.enable=1
 persist.hwc.enable_vds=1
 persist.hwc.mdpcomp.enable=true

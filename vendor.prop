@@ -126,6 +126,21 @@ vendor.display.perf_hint_window=50
 vendor.display.enable_default_color_mode=0
 vendor.video.disable.ubwc=1
 debug.sdm.support_writeback=0
+vendor.display.comp_mask=0
+vendor.display.disable_excl_rect=0
+vendor.display.disable_excl_rect_partial_fb=1
+vendor.display.disable_hw_recovery_dump=1
+vendor.display.disable_offline_rotator=1
+vendor.display.disable_scaler=0
+vendor.display.enable_async_powermode=0
+vendor.display.enable_optimize_refresh=1
+vendor.display.enable_posted_start_dyn=1
+vendor.display.normal_noc_efficiency_factor=0.85
+vendor.display.use_smooth_motion=1
+debug.sf.latch_unsignaled=1
+persist.sys.sf.color_mode=0
+persist.sys.sf.color_saturation=1.0
+vendor.gralloc.disable_ubwc=0
 
 # Dolby
 persist.vendor.audio_fx.current=dolby
